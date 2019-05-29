@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="William et Salomé - T4S - Lycée de l'Hautil">
+    <title>Chiffrement Affine | Omega-Crypt</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet"> 
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/logoomegacrypt.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/logoomegacrypt.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/logoomegacrypt.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/logoomegacrypt.png">
+    <link rel="apple-touch-icon-precomposed" href="images/logoomegacrypt.png">
+</head><!--/head-->
+
+<body>
+	<header id="header">
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <h1><img src="images/logoomegacrypt.png" width="100px" alt="logo"> Omega-Crypt</h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="apropos.html">A propos</a></li>
+                        <li><a href="history.html">Historique</a></li>
+                        <li><a href="inversemodulaire.html">Inverse Modulaire</a></li>
+                        <li class="active"><a href="project-affine.html">Chiffrement Affine</a></li>
+                        <li><a href="project-hill.html">Chiffrement de Hill</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+    
+    <div class="text-center">
+        <h1 class="bold">Chiffrement Affine</h1>
+    </div>
+
+    <section id="portfolio-information" class="padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/affine.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <div class="project-info overflow">
+                        <h3>Chiffrement Affine :</h3>
+                        <p>Ce chiffrement utilise une fonction affine de la forme "A * X + B", où A et B sont des coefficients, et X la lettre à coder. Il faut aussi que A soit inversible modulo 26.
+
+                            Pour décoder, il faut connaitre les coefficients utilisés lors du chiffrement.</p>
+                    </div>
+                    <div class="skills overflow">
+                        <h3>Logique utilisée :</h3>
+                        <ul class="nav navbar-nav navbar-default">
+                            <li><a href="#"><i class="fa fa-check-square"></i>Fonction affine</a></li>
+                            <li><a href="inversemodulaire.html"><i class="fa fa-check-square"></i>Inverse Modulaire (Algorithme d'Euclide)</a></li>
+                        </ul>
+                    </div><br />
+                    <div class="live-preview text-center">
+                        <a href="affine.html" class="btn btn-error uppercase">Lancer : Chiffrement Affine</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--/#portfolio-information-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; Salomé et William - Lycée de l'Hautil - T4S. Tous droits résérvés.</p>
+                        <p>Designed by <a target="_blank" href="http://www.themeum.com">Themeum</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>  
+</body>
+</html>
