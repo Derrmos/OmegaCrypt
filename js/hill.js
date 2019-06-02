@@ -5,14 +5,14 @@ var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var K = [[2, 3], [5, 7]];
 
 // Fonction chiffrement de hill, avec la multiplication de deux matrices, l'une étant la matrice clé (qui sert au chiffrement), l'autre la matrice lettre (qui sont un couple de deux lettres)
-function chiffre_hill(K, L) {
+function chiffre_hill(k, L) {
     // Déclaration de la matrice de sortie
     var M = new Array(1);
     M[0] = new Array(2);
 
     // Associe à la matrice colonne de sortie deux nouveaux nombres, après multiplication entre la matrice clé et la matrice lettre
     for (var i = 0; i < 2; i++) {
-        M[0][i] = ((K[i][0] * L[0][0]) + (K[i][1] * L[0][1])) % 26;
+        M[0][i] = ((k[i][0] * L[0][0]) + (k[i][1] * L[0][1])) % 26;
     }
 
     // Retourne la matrice de sortie
